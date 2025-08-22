@@ -1,0 +1,46 @@
+/* Brand palette + small utilities */
+:root{
+  --brand-dark:#003366;
+}
+
+html,body{scroll-behavior:smooth;}
+.text-brand-dark{color:var(--brand-dark);}
+.bg-brand-dark{background-color:var(--brand-dark);}
+.bg-brand-dark-hover:hover{background-color:#002244;}
+.border-brand-dark{border-color:var(--brand-dark);}
+
+/* Hero overlay animation (optional) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn{ animation: fadeIn 1.2s ease-out forwards; }
+
+/* Nav active state helper */
+.nav-active{ color: var(--brand-dark); font-weight: 700; }
+
+/* Ticket look */
+.ticket-card{ border: 1px dashed #cbd5e1; border-radius: 12px; }
+  
+/* buttons */
+.bg-brand-dark {
+  background-color: #003366; /* Navy Blue */
+}
+.bg-brand-dark-hover:hover {
+  background-color: #001f4d; /* Darker shade */
+}
+.text-brand-dark {
+  color: #003366;
+}
+
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slideDown {
+  animation: slideDown 0.3s ease forwards;
+}
+
+
+
