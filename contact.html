@@ -8,22 +8,65 @@
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-yellow-50 min-h-screen flex flex-col">
 
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-      <a href="index.html" class="flex items-center">
-        <img src="qushal logo 3.jpg" class="h-12 w-auto mr-2" alt="Logo">
-        <span class="text-xl font-bold text-gray-700">Qushal Tour & Travels</span>
-      </a>
-      <nav class="space-x-6 hidden md:block">
-        <a href="index.html" class="text-gray-600 hover:text-yellow-500">Home</a>
-        <a href="tours.html" class="text-gray-600 hover:text-yellow-500">Tours</a>
-        <a href="pickup.html" class="text-gray-600 hover:text-yellow-500">Pickup</a>
-        <a href="about.html" class="text-gray-600 hover:text-yellow-500">About</a>
-        <a href="contact.html" class="text-yellow-600 font-semibold">Contact</a>
-      </nav>
-    </div>
-  </header>
+ <!-- Professional Animated Header -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md transition-all duration-300" id="mainHeader">
+  <nav class="w-full px-6 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="qushal logo 3.jpg" alt="Qushal Tour & Travels Logo"
+           class="h-12 w-auto rounded-xl shadow-md">
+      <span class="text-xl font-bold text-gray-800">Qushal Travels</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex space-x-8 text-gray-700 font-medium items-center">
+      <li class="group flex items-center gap-2 cursor-pointer">
+        <i class="fa-solid fa-house text-blue-600"></i>
+        <a href="index.html" class="relative">Home
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-blue-600 transition-all group-hover:w-full"></span>
+        </a>
+      </li>
+      <li class="group flex items-center gap-2 cursor-pointer">
+        <i class="fa-solid fa-suitcase-rolling text-green-600"></i>
+        <a href="tours.html" class="relative">Tours
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-600 transition-all group-hover:w-full"></span>
+        </a>
+      </li>
+      <li class="group flex items-center gap-2 cursor-pointer">
+        <i class="fa-solid fa-car text-orange-600"></i>
+        <a href="tours.html" class="relative">Services
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-orange-600 transition-all group-hover:w-full"></span>
+        </a>
+      </li>
+      <li class="group flex items-center gap-2 cursor-pointer">
+        <i class="fa-solid fa-phone text-red-600"></i>
+        <a href="contact.html" class="relative">Contact
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-red-600 transition-all group-hover:w-full"></span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- CTA Button -->
+    <a href="contact.html"
+       class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition shadow-md">
+       Get in Touch
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden flex items-center text-gray-800 text-2xl" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Mobile Dropdown -->
+  <div class="md:hidden hidden flex-col space-y-4 px-6 py-4 bg-white shadow-md" id="mobileMenu">
+    <a href="index.html" class="flex items-center gap-2"><i class="fa-solid fa-house text-blue-600"></i> Home</a>
+    <a href="tours.html" class="flex items-center gap-2"><i class="fa-solid fa-suitcase-rolling text-green-600"></i> Tours</a>
+    <a href="tours.html" class="flex items-center gap-2"><i class="fa-solid fa-car text-orange-600"></i> Services</a>
+    <a href="contact.html" class="flex items-center gap-2"><i class="fa-solid fa-phone text-red-600"></i> Contact</a>
+    <a href="contact.html" class="bg-blue-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-blue-700 transition text-center">Get in Touch</a>
+  </div>
+</header>
 
   <!-- Contact Section -->
   <main class="flex-grow flex items-center justify-center px-6 py-12">
@@ -57,4 +100,5 @@
 
 </body>
 </html>
+
 
